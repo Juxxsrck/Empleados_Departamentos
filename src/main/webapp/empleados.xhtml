@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <title>Administración de Empleados</title>
+</h:head>
+<h:body>
+    <h1>Administración de Empleados</h1>
+
+    <!-- Tabla para mostrar la lista de empleados -->
+    <p:dataTable value="#{empleadoBean.listaEmpleados}" var="empleado">
+        <p:column headerText="Documento">
+            #{empleado.documentoNumero} (#{empleado.documentoTipo})
+        </p:column>
+        <p:column headerText="Nombres">
+            #{empleado.nombres} #{empleado.apellidos}
+        </p:column>
+        <p:column headerText="Acciones">
+            <p:commandButton value="Editar" action="#{empleadoBean.editarEmpleado(empleado)}" />
+            <p:commandButton value="Eliminar" action="#{empleadoBean.eliminarEmpleado(empleado)}" />
+        </p:column>
+    </p:dataTable>
+
+    <!-- Formulario para crear un nuevo empleado -->
+    <h3>Crear Empleado</h3>
+    <h:form>
+        <p:panelGrid columns="2">
+            <p:outputLabel for="documentoTipo" value="Tipo de Documento:" />
+            <p:selectOneMenu id="documentoTipo" value="#{empleadoBean.nuevoEmpleado.documentoTipo}">
+                <f:selectItem itemLabel="RC" itemValue="RC" />
+                <f:selectItem itemLabel="TI" itemValue="TI" />
+                <f:selectItem itemLabel="CC" itemValue="CC" />
+                <f:selectItem itemLabel="CE" itemValue="CE" />
+            </p:selectOneMenu>
+
+            <p:outputLabel for="documentoNumero" value="Número de Documento:" />
+            <p:inputText id="documentoNumero" value="#{empleadoBean.nuevoEmpleado.documentoNumero}" />
+
+            <p:outputLabel for="nombres" value="Nombres:" />
+            <p:inputText id="nombres" value="#{empleadoBean.nuevoEmpleado.nombres}" />
+
+            <p:commandButton value="Guardar" action="#{empleadoBean.crearEmpleado}" />
+        </p:panelGrid>
+    </h:form>
+</h:body>
+</html>
