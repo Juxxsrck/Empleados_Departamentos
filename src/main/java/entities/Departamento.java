@@ -27,4 +27,15 @@ public class Departamento {
     @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "fecha_hora_modifica")
     private Date fechaHoraModifica;
+
+    @PrePersist
+    protected void onCreate() {
+        fechaHoraCrea = new Date();
+        fechaHoraModifica = fechaHoraCrea;
+    }
+
+    @PreUpdate
+    protected void onUpdate(){
+        fechaHoraModifica = new Date();
+    }
 }
