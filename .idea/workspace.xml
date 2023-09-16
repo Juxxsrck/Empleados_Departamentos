@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78318d93-91f6-45c2-b508-60e4d718d3fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/services/DepartamentoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/services/EmpleadoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/beans/DepartamentoBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/beans/EmpleadoBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/DepartamentoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/DepartamentoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/EmpleadoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/EmpleadoService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +25,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
@@ -40,11 +46,15 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="beans" />
       <recent name="dao" />
     </key>
   </component>
