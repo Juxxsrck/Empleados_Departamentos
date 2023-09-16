@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78318d93-91f6-45c2-b508-60e4d718d3fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/DepartamentoDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/EmpleadoDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/departamentos.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/empleados.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/services/DepartamentoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/services/EmpleadoService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
