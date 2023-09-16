@@ -41,7 +41,7 @@ public class Empleado {
 
     @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "fecha_hora_crea")
-    private Date fechaHoracrea;
+    private Date fechaHoraCrea;
 
     @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "fecha_hora_modifica")
@@ -50,4 +50,15 @@ public class Empleado {
     @ManyToOne
     @JoinColumn(name = "departamento_id")
     private Departamento departamento;
+
+    @PrePersist
+    protected void onCreate() {
+        fechaHoraCrea = new Date();
+        fechaHoraModifica = fechaHoraCrea;
+    }
+
+    @PreUpdate
+    protected void onUpdate(){
+        fechaHoraModifica = new Date();
+    }
 }
