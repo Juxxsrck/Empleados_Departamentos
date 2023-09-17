@@ -3,10 +3,14 @@ package beans;
 import entities.Departamento;
 import services.DepartamentoService;
 
+import javax.annotation.ManagedBean;
 import javax.annotation.PostConstruct;
+import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import java.util.List;
 
+@ManagedBean
+@RequestScoped
 public class DepartamentoBean {
 
     @Inject
@@ -25,10 +29,11 @@ public class DepartamentoBean {
         listaDepartamentos = departamentoService.obtenetTodosLosDepartamentos();
     }
 
-    public void crearDepartamento(){
+    public String crearDepartamento(){
         departamentoService.crearDepartamento(nuevoDepartamento);
         nuevoDepartamento = new Departamento();
         cargarListaDepartamentos();
+        return "departamentos.xhtml";
     }
 
     public void editarDepartamento(Departamento departamento){
