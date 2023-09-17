@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal" created-in="IU-232.9921.47">
+    <data-source name="hibernate.cfg.xml/Hibernate" uuid="22e88213-72ba-4fa7-8cc4-3e9fb06a2957">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="H2" exact-version="0" />
+      <user-name>juxxsrck</user-name>
+      <schema-mapping />
+    </data-source>
+  </component>
+</project>
