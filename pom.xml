@@ -42,6 +42,11 @@
             <version>1.18.26</version> <!-- Utiliza la versión más reciente compatible con tu proyecto -->
             <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>org.ops4j.pax.web.samples</groupId>
+            <artifactId>jsf-primefaces-embedded</artifactId>
+            <version>9.0.11</version>
+        </dependency>
     </dependencies>
 
 
